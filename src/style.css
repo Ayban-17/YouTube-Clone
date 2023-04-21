@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Bebas+Neue&family=Dosis:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: var(--background);
+}
+
+.container {
+  position: relative;
+}
+
+:root {
+  --background: #0f0f0f;
+  --text-primary: #ffffff;
+  --text-primary-reversed: var(--background);
+  --primary: var(--text-primary);
+  --text-secondary: rgb(143, 143, 143);
+  --secondary: #222222;
+  --text-tertiary: rgb(162, 161, 161);
+  --tertiary: #1e1d1d;
+
+  --border: 1px solid var(--secondary);
+  --hover: #3f3f3f;
+}
+
+::-webkit-scrollbar {
+  background: var(--background);
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+  border-radius: 30px;
+}
+
+/* ================= DISPLAY STYLES ==================== */
+
+.fa-solid,
+img,
+.logo,
+.categories,
+.video-title,
+.channel-name,
+.analytics,
+.video-card,
+.left-nav-item,
+footer ul li,
+.video-title-search,
+.filters p,
+.filters button {
+  cursor: pointer;
+}
+
+header,
+.top-nav,
+.left-header,
+.logo,
+.right-header,
+form,
+main,
+.video-card,
+.bottom-container,
+.analytics,
+.left-nav-header,
+aside,
+.left-nav,
+.left-nav-item,
+footer ul,
+.filters,
+.video-card-search,
+.channel-info,
+.search-results {
+  display: flex;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  position: sticky;
+  top: 60px;
+  z-index: 100;
+}
+
+/* ================= HEADER STYLES ==================== */
+/* =================  LEFT HEADER  ==================== */
+
+header {
+  justify-content: space-between;
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 60px;
+  padding: 0 30px;
+}
+
+.left-header {
+  gap: 20px;
+  align-items: center;
+  flex-basis: 25%;
+}
+
+.logo {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.logo strong {
+  font-size: 1.3rem;
+}
+
+.logo p {
+  font-size: 0.7rem;
+  align-self: start;
+  margin-left: 5px;
+  color: var(--text-secondary);
+}
+
+/* ================= HEADER STYLES ==================== */
+/* =================  MID HEADER  ==================== */
+
+form {
+  justify-content: center;
+  align-self: center;
+  height: 40px;
+  width: 100%;
+  flex-basis: 50%;
+}
+
+form input {
+  flex: 0.8;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 30px 0 0 30px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: var(--border);
+  color: var(--text-primary);
+  outline-style: none;
+}
+
+.fa-magnifying-glass {
+  width: 70px;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: var(--border);
+  border-radius: 0 30px 30px 0;
+}
+
+.fa-microphone {
+  color: var(--primary);
+  width: 43px;
+  height: 43px;
+  border: var(--border);
+  margin-left: 7px;
+  border-radius: 50%;
+  background-color: var(--tertiary);
+}
+
+.fa-microphone:hover {
+  background-color: var(--hover);
+}
+
+/* ================= HEADER STYLES ==================== */
+/* =================  RIGHT HEADER ==================== */
+
+.right-header {
+  flex-basis: 20%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ================= HEADER STYLES ==================== */
+/* ================ TOP NAV STYLES  =================== */
+
+.top-nav {
+  background-color: var(--background);
+  list-style: none;
+  gap: 10px;
+  overflow-x: scroll;
+  padding: 0 30px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+}
+
+.top-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.categories {
+  white-space: nowrap;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: var(--secondary);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease-in;
+}
+
+.categories:hover {
+  background-color: var(--hover);
+}
+
+.categories.active {
+  background-color: var(--primary);
+  color: var(--text-primary-reversed);
+}
+
+/* ================= MAIN STYLES ==================== */
+
+main {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 30px 0;
+}
+
+.video-card {
+  flex-direction: column;
+  margin: 0 0 30px 0;
+}
+
+.thumbnail img {
+  border-radius: 30px;
+}
+.thumbnail iframe {
+  border-radius: 30px;
+}
+
+.bottom-container {
+  margin-top: 10px;
+
+  gap: 20px;
+}
+
+.channel-photo img {
+  border-radius: 50%;
+}
+
+.video-details {
+  color: var(--text-primary);
+}
+
+.video-title {
+  font-size: 1.2em;
+  width: 260px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dot {
+  align-self: center;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: var(--text-secondary);
+}
+
+.analytics,
+.channel-name {
+  color: var(--text-secondary);
+}
+
+.channel-name {
+  width: fit-content;
+}
+
+.channel-name:hover {
+  color: var(--text-primary);
+  transition: 0.2s ease-in;
+}
+
+/* ================= LEFT NAV STYLES ==================== */
+
+.fa-bolt,
+.fa-clock-rotate-left,
+.fa-circle-play,
+.fa-clock,
+.fa-chevron-down,
+.fa-thumbs-up,
+.fa-newspaper,
+.fa-trophy {
+  margin-right: 4px;
+}
+
+.fa-music,
+.fa-clapperboard,
+.fa-newspaper {
+  margin-right: 5px;
+}
+
+.fa-fire-flame-curved {
+  margin-right: 7px;
+}
+
+hr {
+  border: var(--border);
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 101;
+  width: 240px;
+  height: 100%;
+  flex-direction: column;
+  transition: all 0.2s linear;
+}
+.hidden {
+  left: -240px;
+}
+
+.left-nav-header {
+  align-items: center;
+  justify-content: start;
+  padding: 30px;
+  gap: 20px;
+}
+
+.left-nav {
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+
+.left-nav ul {
+  padding: 10px 0;
+}
+
+.left-nav-item {
+  padding: 10px 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-nav-item:hover,
+.selected {
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+.left-nav-item a,
+.left-nav-item i {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+.nav-headers {
+  padding: 10px 0 10px 20px;
+  height: fit-content;
+}
+.nav-headers p {
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 8px rgba(244, 244, 244, 0.3);
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+aside .left-nav .subscriptions li img {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+}
+aside .left-nav .more-from-youtube li img {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+footer {
+  padding: 10px 20px;
+}
+
+footer ul {
+  line-height: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+footer ul:first-child {
+  padding: 10px 10px 15px 0;
+}
+
+footer ul li {
+  white-space: nowrap;
+  list-style: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.copyright {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+.copyright a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ================= SEARCH PAGE STYLES ==================== */
+
+.filters {
+  color: var(--text-primary);
+  width: 95%;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.video-card-search {
+  color: var(--text-primary);
+
+  justify-content: flex-start;
+  width: 95%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+.video-title-search {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.analytics-search {
+  margin: 10px 0;
+}
+.views-search,
+.time-stamp-search {
+  font-size: 0.85em;
+}
+
+.channel-info {
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.channel-info img {
+  width: 25px;
+  height: 25px;
+}
+
+.channel-info .channel-name {
+  align-self: center;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.search-results {
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters button {
+  width: 90px;
+  padding: 10px;
+  border: 0 solid;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.filters button:hover {
+  background-color: var(--secondary);
+}

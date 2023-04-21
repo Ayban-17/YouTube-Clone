@@ -1,0 +1,45 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.filter-header {
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.filter-header .fa-sort,
+.filter-header p {
+  background-color: transparent;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 400px 1fr;
+  grid-template-areas:
+    "filters"
+    "results";
+  transition: grid-template-rows 0.2s ease-in;
+}
+
+.filters {
+  grid-area: filters;
+}
+
+.search-results {
+  grid-area: results;
+}
+
+.filters-hide {
+  grid-template-rows: 50px 1fr;
+}
+
+.no-search-found {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+  color: #fff;
+}

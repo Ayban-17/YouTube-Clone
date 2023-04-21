@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>YouTube</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="left-header">
+          <i
+            id="menu-header"
+            class="fa-solid fa-bars fa-lg"
+            style="color: #ffffff; cursor: pointer"
+          ></i>
+          <a href="index.html">
+            <div class="logo">
+              <img
+                src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+                alt="youtube logo"
+                width="35px"
+                height="35px"
+              />
+              <strong>YouTube</strong>
+              <p>PH</p>
+            </div>
+          </a>
+        </div>
+
+        <form id="form">
+          <input id="search" type="text" placeholder="Search" />
+          <button class="fa-solid fa-magnifying-glass fa-lg"></button>
+          <button class="fa-solid fa-microphone fa-lg"></button>
+        </form>
+
+        <div class="right-header">
+          <i
+            class="fa-solid fa-video fa-lg"
+            style="color: #ffffff; cursor: pointer"
+          ></i>
+          <i
+            class="fa-solid fa-bell fa-lg"
+            style="color: #ffffff; cursor: pointer"
+          ></i>
+          <img
+            src="/assets/dp.jpg"
+            alt="Display Photo"
+            width="35px"
+            height="35px"
+            style="border-radius: 50%; cursor: pointer"
+          />
+        </div>
+      </header>
+
+      <nav>
+        <ul class="top-nav">
+          <li class="categories active">All</li>
+          <li class="categories">JavaScript</li>
+          <li class="categories">Mixes</li>
+          <li class="categories">Computer Programming</li>
+          <li class="categories">Gaming</li>
+          <li class="categories">Music</li>
+          <li class="categories">Machine Learning</li>
+          <li class="categories">API</li>
+          <li class="categories">HTML</li>
+          <li class="categories">CSS</li>
+          <li class="categories">React JS</li>
+          <li class="categories">Live</li>
+          <li class="categories">Python</li>
+          <li class="categories">Volleyball</li>
+          <li class="categories">useEffect</li>
+          <li class="categories">useState</li>
+          <li class="categories">Hooks</li>
+          <li class="categories">Front End</li>
+          <li class="categories">Back End</li>
+          <li class="categories">Road Map</li>
+        </ul>
+      </nav>
+
+      <main></main>
+
+      <aside class="hidden">
+        <header class="left-nav-header">
+          <i
+            id="left-nav-menu-header"
+            class="fa-solid fa-bars fa-lg"
+            style="color: #ffffff; cursor: pointer"
+          ></i>
+          <a href="index.html">
+            <div class="logo">
+              <img
+                src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+                alt="youtube logo"
+                width="35px"
+                height="35px"
+              />
+              <strong>YouTube</strong>
+              <p>PH</p>
+            </div>
+          </a>
+        </header>
+        <nav class="left-nav">
+          <ul>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-house fa" style="color: #ffffff"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="left-nav-item selected">
+              <i class="fa-solid fa-bolt fa" style="color: #ffffff"></i>
+              <a href="shorts.html">Shorts</a>
+            </li>
+            <li class="left-nav-item">
+              <i
+                class="fa-solid fa-layer-group fa-md"
+                style="color: #ffffff"
+              ></i
+              ><a href="subscriptions.html">Subscriptions</a>
+            </li>
+          </ul>
+          <hr />
+          <ul>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-photo-film fa" style="color: #ffffff"></i>
+              <a href="#">Library</a>
+            </li>
+            <li class="left-nav-item">
+              <i
+                class="fa-sharp fa-solid fa-clock-rotate-left"
+                style="color: #ffffff"
+              ></i>
+              <a href="#">History</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-circle-play" style="color: #ffffff"></i>
+              <a href="#">Your Videos</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-clock" style="color: #ffffff"></i>
+              <a href="#">Watch Later</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-thumbs-up" style="color: #ffffff"></i>
+              <a href="#">Liked Videos</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-chevron-down" style="color: #ffffff"></i>
+              <a href="#">Show More</a>
+            </li>
+          </ul>
+          <hr />
+          <ul class="subscriptions">
+            <li class="nav-headers">
+              <p>Subscriptions</p>
+            </li>
+            <li class="left-nav-item">
+              <img
+                src="https://t3.ftcdn.net/jpg/04/54/66/12/360_F_454661277_NtQYM8oJq2wOzY1X9Y81FlFa06DVipVD.jpg"
+                alt="music"
+              />
+              <a href="">Music</a>
+            </li>
+            <li class="left-nav-item">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/012/589/359/non_2x/victory-golden-trophy-icon-sparkling-gold-cup-with-star-on-blue-background-in-flat-style-vector.jpg"
+                alt="sports"
+              />
+              <a href="">Shorts</a>
+            </li>
+            <li class="left-nav-item">
+              <img
+                src="https://icon-library.com/images/gaming-icon/gaming-icon-2.jpg"
+                alt="gaming"
+              /><a href="">Gaming</a>
+            </li>
+            <li class="left-nav-item">
+              <img
+                src="https://thumbs.dreamstime.com/b/glowing-neon-movie-clapper-icon-isolated-brick-wall-background-film-board-clapperboard-sign-cinema-production-media-industry-218465569.jpg"
+                alt="Movies"
+              /><a href="">Movies</a>
+            </li>
+          </ul>
+          <hr />
+
+          <ul class="explore">
+            <li class="nav-headers">
+              <p>Explore</p>
+            </li>
+            <li class="left-nav-item">
+              <i
+                class="fa-solid fa-fire-flame-curved"
+                style="color: #ffffff"
+              ></i>
+              <a href="#">Trending</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-music" style="color: #ffffff"></i>
+              <a href="#">Music</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-clapperboard" style="color: #ffffff"></i>
+              <a href="#">Movies</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-gamepad" style="color: #ffffff"></i>
+              <a href="#">Gaming</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-regular fa-newspaper" style="color: #ffffff"></i>
+              <a href="#">News</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-trophy"></i>
+              <a href="#">Sports</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-shirt" style="color: #ffffff"></i>
+              <a href="#">Fashion & Beauty</a>
+            </li>
+          </ul>
+          <hr />
+          <ul class="more-from-youtube">
+            <li class="nav-headers">
+              <p>More from YouTube</p>
+            </li>
+            <li class="left-nav-item yt-logo">
+              <img
+                src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+                alt="youtube-logo"
+              />
+              <a href="">YouTube Premium</a>
+            </li>
+            <li class="left-nav-item yt-music">
+              <img src="assets/yt-music.png" alt="youtube-music-logo" />
+              <a href="">YouTube Music</a>
+            </li>
+            <li class="left-nav-item yt-kids">
+              <img src="assets/yt-kid.png" width="40px" height="40px" /><a
+                href=""
+                >YouTube Kids</a
+              >
+            </li>
+          </ul>
+          <hr />
+          <ul class="settings">
+            <li class="left-nav-item">
+              <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+              <a href="">Settings</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-flag" style="color: #ffffff"></i>
+              <a href="">Report history</a>
+            </li>
+            <li class="left-nav-item">
+              <i class="fa-solid fa-circle-question" style="color: #ffffff"></i
+              ><a href="">Help</a>
+            </li>
+            <li class="left-nav-item">
+              <i
+                class="fa-solid fa-circle-exclamation"
+                style="color: #ffffff"
+              ></i
+              ><a href="">Send feedback</a>
+            </li>
+          </ul>
+          <hr />
+          <footer>
+            <ul>
+              <li>About</li>
+              <li>Press</li>
+              <li>Copyright</li>
+              <li>Contact us</li>
+              <li>Creators</li>
+              <li>Advertise</li>
+              <li>Developers</li>
+            </ul>
+            <ul>
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>Policy & Safety</li>
+              <li>How YouTube works</li>
+              <li>Test new features</li>
+            </ul>
+            <p class="copyright">
+              <i
+                class="fa-regular fa-copyright fa-xs"
+                style="color: var(--text-secondary)"
+              ></i>
+              <a
+                href="https://www.linkedin.com/in/mark-ivan-hernandez-a787a11b8/"
+                >2023 Ayban Hernandez</a
+              >
+            </p>
+          </footer>
+        </nav>
+      </aside>
+    </div>
+    <script src="src/fetchData.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
