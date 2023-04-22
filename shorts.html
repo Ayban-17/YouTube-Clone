@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/shorts.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -62,32 +63,146 @@
         </div>
       </header>
 
-      <nav>
-        <ul class="top-nav">
-          <li class="categories active">All</li>
-          <li class="categories">JavaScript</li>
-          <li class="categories">Mixes</li>
-          <li class="categories">Computer Programming</li>
-          <li class="categories">Gaming</li>
-          <li class="categories">Music</li>
-          <li class="categories">Machine Learning</li>
-          <li class="categories">API</li>
-          <li class="categories">HTML</li>
-          <li class="categories">CSS</li>
-          <li class="categories">React JS</li>
-          <li class="categories">Live</li>
-          <li class="categories">Python</li>
-          <li class="categories">Volleyball</li>
-          <li class="categories">useEffect</li>
-          <li class="categories">useState</li>
-          <li class="categories">Hooks</li>
-          <li class="categories">Front End</li>
-          <li class="categories">Back End</li>
-          <li class="categories">Road Map</li>
-        </ul>
-      </nav>
-
-      <main></main>
+      <main>
+        <section class="shorts-container" id="section-1">
+          <iframe
+            width="338"
+            height="602"
+            src="https://www.youtube.com/embed/J_hHYKu6rpo"
+            title="Get Exact User Location using JavaScript"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="reactions">
+            <div class="react-container">
+              <button class="like react" onclick="toggleLike()">
+                <i class="fa-regular fa-thumbs-up fa-lg"></i>
+              </button>
+              <p>2.6k</p>
+            </div>
+            <div class="react-container">
+              <button class="dislike react" onclick="toggleDislike()">
+                <i class="fa-regular fa-thumbs-down fa-lg"></i>
+              </button>
+              <p>Dislike</p>
+            </div>
+            <div class="comment react-container">
+              <button class="comment">
+                <i class="fa-regular fa-comment fa-lg"></i>
+              </button>
+              <p>17</p>
+            </div>
+            <div class="share react-container">
+              <button class="share">
+                <i class="fa-solid fa-share fa-lg"></i>
+              </button>
+              <p>Share</p>
+            </div>
+            <button class="settings">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+            </button>
+            <img
+              width="50"
+              height="50"
+              src="assets/dp.jpg"
+              alt="display-photo"
+            />
+          </div>
+        </section>
+        <section class="shorts-container" id="section-2">
+          <iframe
+            width="338"
+            height="602"
+            src="https://www.youtube.com/embed/J_hHYKu6rpo"
+            title="Get Exact User Location using JavaScript"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="reactions">
+            <div class="react-container">
+              <button class="like react" onclick="toggleLike()">
+                <i class="fa-regular fa-thumbs-up fa-lg"></i>
+              </button>
+              <p>2.6k</p>
+            </div>
+            <div class="react-container">
+              <button class="dislike react" onclick="toggleDislike()">
+                <i class="fa-regular fa-thumbs-down fa-lg"></i>
+              </button>
+              <p>Dislike</p>
+            </div>
+            <div class="comment react-container">
+              <button class="comment">
+                <i class="fa-regular fa-comment fa-lg"></i>
+              </button>
+              <p>17</p>
+            </div>
+            <div class="share react-container">
+              <button class="share">
+                <i class="fa-solid fa-share fa-lg"></i>
+              </button>
+              <p>Share</p>
+            </div>
+            <button class="settings">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+            </button>
+            <img
+              width="50"
+              height="50"
+              src="assets/dp.jpg"
+              alt="display-photo"
+            />
+          </div>
+        </section>
+        <section class="shorts-container" id="section-3">
+          <iframe
+            width="338"
+            height="602"
+            src="https://www.youtube.com/embed/J_hHYKu6rpo"
+            title="Get Exact User Location using JavaScript"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="reactions">
+            <div class="react-container">
+              <button class="like react" onclick="toggleLike()">
+                <i class="fa-regular fa-thumbs-up fa-lg"></i>
+              </button>
+              <p>2.6k</p>
+            </div>
+            <div class="react-container">
+              <button class="dislike react" onclick="toggleDislike()">
+                <i class="fa-regular fa-thumbs-down fa-lg"></i>
+              </button>
+              <p>Dislike</p>
+            </div>
+            <div class="comment react-container">
+              <button class="comment">
+                <i class="fa-regular fa-comment fa-lg"></i>
+              </button>
+              <p>17</p>
+            </div>
+            <div class="share react-container">
+              <button class="share">
+                <i class="fa-solid fa-share fa-lg"></i>
+              </button>
+              <p>Share</p>
+            </div>
+            <button class="settings">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+            </button>
+            <img
+              width="50"
+              height="50"
+              src="assets/dp.jpg"
+              alt="display-photo"
+            />
+          </div>
+        </section>
+      </main>
 
       <aside class="hidden">
         <header class="left-nav-header">
@@ -304,6 +419,7 @@
         </nav>
       </aside>
     </div>
+    <script src="src/shorts.js"></script>
     <script src="src/fetchData.js"></script>
     <script src="src/main.js"></script>
   </body>

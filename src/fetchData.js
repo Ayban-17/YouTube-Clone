@@ -108,3 +108,5 @@ let mainData = [
     embed_URL: "https://www.youtube.com/embed/IjVylDwt_h8",
   },
 ];
+
+let shortsData = [];

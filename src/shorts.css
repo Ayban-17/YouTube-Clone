@@ -1,0 +1,67 @@
+.shorts-container,
+.reactions,
+.react-container,
+.reactions button,
+.section-scroll {
+  display: flex;
+}
+
+main {
+  overflow: hidden;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.shorts-container {
+  gap: 25px;
+}
+
+.reactions {
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.reactions button {
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 0 solid;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #222222;
+  color: #fff;
+}
+
+.reactions button:hover {
+  cursor: pointer;
+  background-color: #3f3f3f;
+}
+
+.react-container {
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.fa-ellipsis {
+  background-color: transparent;
+}
+
+.like.active,
+.dislike.active {
+  background-color: #fff;
+  color: #222222;
+}
+
+.like.active:hover,
+.dislike.active:hover {
+  background-color: #eeebeb;
+}
