@@ -19,6 +19,7 @@ const generateIframe = () => {
   let video = mainData.find((data) => data.id === videoID);
   let {
     id,
+    thumbnail,
     image,
     title,
     name,
@@ -37,9 +38,8 @@ const generateIframe = () => {
     allowfullscreen
   ></iframe
   >;
-  <img class="bg-thumbnail" src="assets/thumbnails/one.png" alt="" />
-</div>
-<div class="video-player-details">
+  <img class="bg-thumbnail" src="${thumbnail}" alt="" />
+  <div class="video-player-details">
   <h1>
     ${title}
   </h1>
@@ -94,33 +94,11 @@ const generateIframe = () => {
     </div>
     <h3>Show More</h3>
   </div>
-  <nav class="tag">
-    <ul class="top-nav">
-      <li class="categories active">All</li>
-      <li class="categories">JavaScript</li>
-      <li class="categories">Mixes</li>
-      <li class="categories">Computer Programming</li>
-      <li class="categories">Gaming</li>
-      <li class="categories">Music</li>
-      <li class="categories">Machine Learning</li>
-      <li class="categories">API</li>
-      <li class="categories">HTML</li>
-      <li class="categories">CSS</li>
-      <li class="categories">React JS</li>
-      <li class="categories">Live</li>
-      <li class="categories">Python</li>
-      <li class="categories">Volleyball</li>
-      <li class="categories">useEffect</li>
-      <li class="categories">useState</li>
-      <li class="categories">Hooks</li>
-      <li class="categories">Front End</li>
-      <li class="categories">Back End</li>
-      <li class="categories">Road Map</li>
-    </ul>
-  </nav>
+</div>
 </div>
 
-<div id="connected-videos"></div>`;
+
+`;
 };
 generateIframe();
 

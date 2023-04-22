@@ -30,28 +30,33 @@ iframe {
   width: 93vw;
   height: 55vh;
   z-index: 1;
+  left: 30px;
 }
 .bg-thumbnail {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 90vw;
-  height: 510px;
+  top: 85px;
+  left: 25px;
+  width: 95%;
+  height: 420px;
   object-fit: cover;
   filter: blur(10px);
   opacity: 50%;
   cursor: auto;
 }
 
+.player-container {
+  height: 100%;
+}
+
 .video-player-details {
   margin: 0 25px;
-  padding: 10px 20px 10px 20;
 }
 
 .video-player-details h1 {
   color: #fff;
   font-size: 1.3rem;
   line-height: 1.5em;
+  padding-left: 5px;
 }
 
 .info-and-analytics {
@@ -62,6 +67,7 @@ iframe {
   color: #fff;
   gap: 10px;
   width: fit-content;
+  padding-left: 5px;
 }
 
 .channel-info img {
@@ -236,4 +242,39 @@ iframe {
 
 .video-card-connected-videos {
   margin-left: 20px;
+}
+
+/* ================= MEDIA QUERIES ==================== */
+/* ================= DESKTOP QUERIES ==================== */
+
+@media screen and (min-width: 1400px) {
+  .container {
+    display: grid;
+    grid-template-columns: 900px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "header header"
+      "main connected"
+      "video-player-details connected";
+  }
+  main {
+    justify-content: center;
+  }
+  .connected-videos {
+    grid-area: connected;
+    background-color: white;
+  }
+  .hidden {
+    left: -240px;
+  }
+  iframe {
+    width: 850px;
+    height: 478px;
+  }
+  .bg-thumbnail {
+    top: 80px;
+    left: 20px;
+    width: 880px;
+    height: 500px;
+  }
 }
