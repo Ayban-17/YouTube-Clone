@@ -78,6 +78,7 @@ aside,
 footer ul,
 .filters,
 .video-card-search,
+.video-card-connected-videos,
 .channel-info,
 .search-results {
   display: flex;
@@ -432,7 +433,8 @@ footer ul li {
   border-bottom: 2px solid var(--secondary);
 }
 
-.video-card-search {
+.video-card-search,
+.video-card-connected-videos {
   color: var(--text-primary);
 
   justify-content: flex-start;

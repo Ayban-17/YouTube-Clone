@@ -62,7 +62,7 @@ const generateVideo = (keyword, dataHolder) => {
   <div class="filters">
     <button onclick="filterToggle()">
       <div class="filter-header">
-        <i class="fa-solid fa-sort" style="color: #ffffff"></i>
+      <i class="fa-solid fa-list-check fa-md" style="color: #ffffff;"></i>
         <p style="color: var(--text-primary)">Filters</p>
       </div>
     </button>
