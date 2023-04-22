@@ -1,5 +1,5 @@
 # YouTube-Clone
-My YouTube clone app is a front-end web application developed using HTML, CSS, and Vanilla JavaScript, featuring a search function that lets users search for videos on the platform. 
+
 
 My YouTube clone app is a functional front-end web application that I developed using HTML, CSS, and Vanilla JavaScript. I'm proud to say that it functions very well and I'm happy with the end result.
 
