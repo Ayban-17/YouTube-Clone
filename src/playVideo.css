@@ -1,0 +1,225 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  transition: scroll-behavior 0.2s ease-in-out;
+}
+
+.channel-info,
+.info-and-analytics,
+.reaction,
+.like,
+.share,
+.analytics > button:last-child,
+.above-description,
+.additional-details {
+  display: flex;
+}
+
+.channel-info button,
+.share,
+.analytics > button:last-child,
+.like,
+.dislike,
+.additional-details-hidden {
+  cursor: pointer;
+}
+
+iframe {
+  position: relative;
+  width: 93vw;
+  height: 55vh;
+  z-index: 1;
+}
+.bg-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 510px;
+  object-fit: cover;
+  filter: blur(10px);
+  opacity: 50%;
+  cursor: auto;
+}
+
+.video-player-details {
+  margin: 0 25px;
+  padding: 10px 20px 10px 20;
+}
+
+.video-player-details h1 {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+}
+
+.info-and-analytics {
+  justify-content: space-between;
+}
+
+.channel-info {
+  color: #fff;
+  gap: 10px;
+  width: fit-content;
+}
+
+.channel-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.details p {
+  font-size: 1.2rem;
+}
+
+.details p:last-child {
+  font-size: 0.8rem;
+  color: rgb(176, 174, 174);
+}
+
+.channel-info button {
+  align-self: center;
+  margin-left: 15px;
+  padding: 0 20px;
+  height: 35px;
+  border-radius: 30px;
+  border: 0 solid;
+  color: #000;
+  background-color: #fff;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.channel-info button:hover {
+  background-color: #b5b3b3;
+}
+
+.analytics {
+  gap: 10px;
+}
+
+.reaction {
+  align-items: center;
+}
+
+.like,
+.dislike {
+  background-color: #222222;
+  border: 0 solid;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.like:hover,
+.dislike:hover {
+  background-color: #3f3f3f;
+}
+
+.like {
+  color: #fff;
+  border-radius: 30px 0 0 30px;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 5px;
+  border-right: #d5cfcf 1px solid;
+}
+
+.like p {
+  background-color: transparent;
+}
+
+.dislike {
+  border-radius: 0 30px 30px 0;
+  padding: 10px 20px;
+}
+
+.share {
+  align-items: center;
+  align-self: center;
+  gap: 10px;
+  height: fit-content;
+  padding: 10px 20px;
+  border: 0 solid;
+  background-color: #222222;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.share p {
+  color: #fff;
+  background-color: transparent;
+}
+
+.share:hover,
+.analytics > button:last-child:hover {
+  background-color: #3f3f3f;
+}
+
+.analytics > button:last-child i {
+  background-color: transparent;
+}
+
+.analytics > button:last-child {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0 solid;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: #222222;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.additional-details {
+  margin-top: 5px;
+  border-radius: 20px;
+  background-color: #222222;
+  color: #fff;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 45px 15px 15px;
+}
+
+.additional-details-hidden:hover {
+  background-color: #3f3f3f;
+}
+
+.above-description {
+  gap: 10px;
+}
+
+.desc p {
+  font-size: 0.9rem;
+  color: #dad8d8;
+}
+
+.description-hidden {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.above-description,
+.above-description p,
+.desc p,
+.desc,
+.additional-details > h3 {
+  background-color: transparent;
+}
+
+.desc {
+  position: relative;
+}
+
+.show-less {
+  position: absolute;
+  bottom: -29px;
+  background-color: #222222;
+  padding: 0 2px;
+  z-index: 1;
+}
+.show-less:hover {
+  cursor: pointer;
+}
