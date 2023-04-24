@@ -4,6 +4,12 @@ let viewStorage = JSON.parse(localStorage.getItem("views"));
 let randomNumber = Math.ceil(Math.random() * 2000000);
 let subscribers;
 
+window.addEventListener("DOMContentLoaded", () => {
+  generateNumberOfSubs(randomNumber);
+  generateIframe();
+  generateConnectedVideos();
+});
+
 const generateNumberOfSubs = (num) => {
   if (num > 1000000) {
     subscribers = (num / 1000000).toFixed(1) + "m";
@@ -13,7 +19,6 @@ const generateNumberOfSubs = (num) => {
     subscribers = num;
   }
 };
-generateNumberOfSubs(randomNumber);
 
 const generateIframe = () => {
   let video = mainData.find((data) => data.id === videoID);
@@ -100,7 +105,6 @@ const generateIframe = () => {
 
 `;
 };
-generateIframe();
 
 const generateConnectedVideos = () => {
   let connectedVid = document.getElementById("connected-videos");
@@ -160,4 +164,3 @@ const generateConnectedVideos = () => {
     })
     .join(""));
 };
-generateConnectedVideos();

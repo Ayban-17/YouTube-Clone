@@ -43,3 +43,12 @@ main {
   top: 80px;
   color: #fff;
 }
+
+@media screen and (min-width: 1400px) {
+  .container {
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "header header"
+      "aside main";
+  }
+}

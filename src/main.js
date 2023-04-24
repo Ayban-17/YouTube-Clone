@@ -78,11 +78,11 @@ const setToLocaleStorage = (videoID, viewsCount) => {
     viewStorage.push({ id: videoID, viewsCount: viewsCount });
   }
   localStorage.setItem("views", JSON.stringify(viewStorage));
-  updateNumberOfViews(videoID);
+  // updateNumberOfViews(videoID);
 };
 
-const updateNumberOfViews = (videoID) => {
-  const viewsElement = document.getElementById(`views-${videoID}`);
-  let updatedView = viewStorage.find((data) => data.id === videoID);
-  viewsElement.textContent = `${updatedView.viewsCount} views`;
-};
+// const updateNumberOfViews = (videoID) => {
+//   const viewsElement = document.getElementById(`views-${videoID}`);
+//   let updatedView = viewStorage.find((data) => data.id === videoID);
+//   viewsElement.textContent = `${updatedView.viewsCount} views`;
+// };

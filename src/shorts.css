@@ -1,4 +1,4 @@
-.shorts-container,
+.shorts-content-container,
 .reactions,
 .react-container,
 .reactions button,
@@ -7,25 +7,33 @@
 }
 
 main {
-  overflow: hidden;
-  height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-  height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  padding: 0;
 }
 
 .shorts-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 90vh;
+  width: 100vw;
+}
+
+.shorts-content-container {
+  padding-top: 25px;
+  justify-content: center;
   gap: 25px;
+  height: 90vh;
+  scroll-snap-align: start end;
 }
 
 .reactions {
   flex-direction: column;
-  justify-content: flex-end;
+  padding-top: 150px;
   gap: 15px;
+}
+
+.reactions img {
+  border-radius: 10px;
 }
 
 .reactions button {
@@ -64,4 +72,16 @@ main {
 .like.active:hover,
 .dislike.active:hover {
   background-color: #eeebeb;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "header header"
+      "aside main";
+  }
+  .shorts-container {
+    width: 100%;
+  }
 }

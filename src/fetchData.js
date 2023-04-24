@@ -109,4 +109,42 @@ let mainData = [
   },
 ];
 
-let shortsData = [];
+let shortsData = [
+  {
+    id: "bzhxbs",
+    shorts_URL: "https://www.youtube.com/embed/J_hHYKu6rpo",
+    title: "Get Exact User Location using JavaScript",
+    image: "assets/dp/short-two.png",
+    profile_URL: "https://www.youtube.com/channel/UCk7xIEmd3MeyhIu2StLX5yA",
+  },
+  {
+    id: "qpfhem",
+    shorts_URL: "https://www.youtube.com/embed/h0DvPEKs7-s",
+    title: "Parkour Speedrun Puzzle 🧩",
+    image: "assets/dp/short-one.png",
+    profile_URL: "https://www.youtube.com/channel/UCATWUurs5SImDMX_prUtxng",
+  },
+  {
+    id: "fjrxcr",
+    shorts_URL: "https://www.youtube.com/embed/tCE5TMYkZKA",
+    title:
+      "Fastest Ninja Warrior Junior | American Ninja Warrior | ANW  #shorts",
+    image: "assets/dp/short-three.png",
+    profile_URL: "https://www.youtube.com/@ANW",
+  },
+  {
+    id: "tapqhd",
+    shorts_URL: "https://www.youtube.com/embed/PifMJzoKp84",
+    title: "Fails so bad that they’re incredible 😂",
+    image: "assets/dp/short-four.png",
+    profile_URL: "https://www.youtube.com/@OmarESPN",
+  },
+  {
+    id: "nevufd",
+    shorts_URL: "https://www.youtube.com/embed/su_CXDfnjmQ",
+    title:
+      "The SKYBALL!! This was insane and tough to pass! #volleyball #usavolleyball #skyball",
+    image: "assets/dp/short-five.png",
+    profile_URL: "https://www.youtube.com/@ErikShojivolleyball",
+  },
+];
