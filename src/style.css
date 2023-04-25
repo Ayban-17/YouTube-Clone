@@ -537,3 +537,44 @@ footer ul li {
     padding-left: 0;
   }
 }
+
+@media screen and (max-width: 678px) {
+  .top-nav::before {
+    position: absolute;
+    color: #ffffff;
+    content: "";
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 1);
+    width: 30px;
+    height: 50px;
+    background-color: #0f0f0f;
+    top: 0;
+    left: 0;
+  }
+  .top-nav::after {
+    position: absolute;
+    color: #ffffff;
+    content: "";
+    box-shadow: 30px 20px 10px rgba(0, 0, 0, 1);
+    width: 30px;
+    height: 50px;
+    background-color: #0f0f0f;
+    top: 0;
+    right: 0;
+  }
+
+  form {
+    justify-content: flex-end;
+    margin: 0 20px;
+  }
+  form input {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    background-color: transparent;
+    border: 0 solid;
+    width: 30px;
+  }
+  .fa-microphone {
+    border-radius: 0;
+  }
+}

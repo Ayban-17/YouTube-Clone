@@ -1,5 +1,6 @@
 let likeActive = false;
 let dislikeActive = false;
+
 let randomNumber = Math.ceil(Math.random() * 2000000);
 let randomNumberComments = Math.ceil(Math.random() * 1000);
 let likes;
